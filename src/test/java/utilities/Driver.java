@@ -10,7 +10,19 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.time.Duration;
 
 public class Driver {
+    /*
+    POM de Driver icin TestBase classina extends etmek yerine Driver class indan
+    static methodlar kullanarak driver olusturup, ilgili ayarlarin yapilmasi
+    ve en sonda driver in kapatilmasi tercih edilmiştir
+    POM de Driver class indaki getDriver() nin obje olusturularak kullanilmasini engellemek icin
+    Singleton pattern kullanimi benimsenmistir.
 
+    Singleton Pattern : tekli kullanim, bir class in farkli class lardan obje oluşturularak
+    kullanimi ni engellemek icin kullanilir.
+
+    Bunu saglamak icin yapmamiz gereken sey oldukca basit obje olusturmak icin kullanilan
+    constructor i private yaptigimizda baska classlardan Drever class indan obje olusturulmasi mumkün OLMAZ
+     */
     static WebDriver driver;
 
     private Driver(){

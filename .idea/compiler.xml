@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="A101_Test_TestNG" />
+        <module name="com.TestNG_Batch" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="A101_Test_TestNG" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
